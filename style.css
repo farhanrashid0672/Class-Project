@@ -1,6 +1,7 @@
 body {
   background-color: pink;
   color: white;
+  display: flex;
 }
 .level {
   color: #fff8dc;
