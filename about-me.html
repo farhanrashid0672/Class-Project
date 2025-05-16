@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+            box-sizing: border-box;
+        }
+        body {
+            
+        }
+        nav {
+            background-color: pink;
+            height: 80px;
+            width: 100%;
+        }
+
+        /* .logo {
+            display: flex;
+            justify-content: center;
+
+        }
+        .logo span {
+            font-size: 30px;
+        } */
+        label.logo {
+             font-size: 2rem;
+             line-height: 5rem;
+             padding: 0 100px;
+             font-weight: bold;
+        }
+        
+        nav ul {
+            float: right;
+            margin-right: 80px; 
+
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 5rem;
+            margin: 0 8px;
+        }
+        nav ul li a {
+            color: yellow;
+            font-size: 16px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            text-decoration: none;
+            list-style: none;
+        }
+        a:hover {
+            color: white;
+            background-color: blue;
+            transition: .5s;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+        .photo {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+        .name {
+            font-size: 2rem;
+            color: rgb(18, 18, 140);
+            font-weight: bold;
+            margin: 2rem;
+        }
+        .education {
+            height: 200px;
+            width: 100%;
+            padding: 20px 30px;
+            margin: 24px;
+        }
+        .skill {
+            height: 200px;
+            width: 100%;
+            padding: 20px 30px;
+            margin: 24px;
+        }
+        footer div {
+            height: 50px;
+            width: 100%;
+            align-items: center;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <div class="logo">
+                <img src="logo.jpg" height="50px" width="50" border-radius="50%">
+                <span>Aboutme!</span>
+            </div> -->
+
+            <label class="logo">Aboutme!</label>
+    
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        
+            
+        </nav>
+    </header>
+    <main class="container">
+        <div class="name">
+            Hello, <br> My name is Farhan Rashid
+        </div>
+        <div class="photo">
+            <img src="image.jpg" class="photo">
+        </div>
+        </main>
+        <hr>
+        <div class="education">
+            <h3>Education</h3>
+            <ul>
+                <li>BCA-II<sup>nd</sup>Year<br>Allama Iqbal College, Bihar Sharif Nalanda, Bihar</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="skill">
+            <h3>Skills</h3>
+            <ul>
+                <li>C,&nbsp;C++&amp;Java</li>
+                <li>My SQL (DBMS)</li>
+                <li>Visul Basic.Net</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="project">
+
+        </div>
+        <hr>
+        <footer>
+            <div>
+                <p>&copy;Allama Iqbal College About me! 2025</p>
+
+            </div>
+        </footer>
+
+</body>
+</html>

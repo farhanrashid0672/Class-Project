@@ -1,59 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    
-    <form>
-      <h1>Registration Form</h1>
-      <level class="level">Name</level> <br>
-      <input placeholder="First name" type="text">
-      <input placeholder="Last name" type="text">       <br> <br>
-      <level class="level">G-mail</level> <br>
-      <input placeholder="Enter your email"type="text" size="46">
-      <br> <br>
-      <level>Phone</level> &nbsp;
-      <input type="number"> <br><br>
-      <level>Gender : &nbsp;</level>
-      <input type="radio" name="gender" value="Male">
-      <level>Male</level>
-      <input type="radio" name="gender" value="Female">
-      <level>Female</level>
-      <input type="radio" name="gender" value="Other">
-      <level>Other</level> <br><br>
-      <levle>Date of Birth &nbsp;</levle>
-      <input type="date"> <br><br>
-      <level>Choose your country</level> <br>
-      <select name="country">
-        <option value=" ">Select your country</option>
-        <option value="India">India</option>
-        <option value="Pakistan">Pakistan</option>
-        <option value="Nepal">Nepal</option>
-        <option value="China">China</option>
-        <option value="USA">USA</option>
-        <option value="Singapur">Singapur</option>
-      </select> <br><br>
-      <levle>Language : &nbsp;</levle> <be>
-        <input type="checkbox" name="skill" vlaue="Java">
-        <level>Java</level>
-        <input type="checkbox" id="C++" name="skill" value="C++">
-        <levle for="C++">C++</levle>
-        <input type="checkbox" name="skill" vlaue="Python">
-        <levle>Python</levle>
-      </level> <br><br>
-      <level class="level">Password</level> <br>
-      <input placeholder="Enter your password"           type="password" size="46">
-      <br> <br>
-      <level class="level">Conform</level> <br>
-      <input placeholder="Conform password"         type="password" size="46">
-      <br> <br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      background-color: rgb(8, 8, 55);
+    }
+    .logo {
+      font-size: 2rem;
+      color: rgb(246, 246, 157);
+    }
+    .logo:hover {
+      font-size: 2.3rem;
+      transition-duration: 0.700s;
+    }
+    nav {
+      background-color: rgb(25, 25, 87);
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 4rem;
+    }
+    .list ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
 
-      <button class="button">Register</button>
-    </form>
-    
-  </body>
+    }
+    .list ul li {
+      list-style-type: none;
+    }
+    .list ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    .list ul li a:hover {
+      color: rgb(228, 228, 58);
+      font-size: 1.1rem;
+      transition-duration: 0.500s;
+    }
+    @media only screen and (max-width: 400px) {
+      .logo {
+        display: none;
+      }
+      
+
+      
+
+    }
+    .container {
+      display: flex;
+      justify-content: right;
+      margin: 8rem 12rem;
+    }
+    .box {
+      height: 40vh;
+      width: 60vh;
+      background-color: rgb(25, 25, 87);
+      color: white;
+    }
+    .box h2 {
+      padding: 1rem;
+      margin: 0.5rem 7rem;
+    }
+    .box p {
+      padding: 1rem;
+    }
+    .box p a {
+      text-decoration: none;
+      color: rgb(228, 228, 58);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        Apnawebsite
+      </div>
+      <div class="list">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="https://github.com/farhanrashid123">Service</a></li>
+          <li><a href="farhan-rashid0672">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="box">
+      <h2>Class Activity</h2>
+      <p><b>Registration</b> <a href="form.html">Click here</a> </p>
+      <p><b>Examination Report</b> <a href="table.html">Click here</a> </p>
+    </div>
+  </main>
+</body>
 </html>
