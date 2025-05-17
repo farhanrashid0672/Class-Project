@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Page</title>
+  
+  
   <style>
     * {
       margin: 0px;
@@ -13,38 +15,45 @@
       background-color: rgb(8, 8, 55);
     }
     .logo {
-      font-size: 2rem;
-      color: rgb(246, 246, 157);
+      font-size: 2.2rem;
+      color: rgb(8, 8, 55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo img {
+      height: 80px;
+      width: 80px;
     }
     .logo:hover {
       font-size: 2.3rem;
       transition-duration: 0.700s;
     }
-    nav {
-      background-color: rgb(25, 25, 87);
-      color: white;
+    .nav-container {
+      background-color: white;
+      color: black;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      height: 4rem;
+      height: 5.5rem;
     }
     .list ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 2rem;
-
     }
     .list ul li {
       list-style-type: none;
     }
     .list ul li a {
       text-decoration: none;
-      color: white;
+      color: black;
+      font-size: 1.3rem;
     }
     .list ul li a:hover {
-      color: rgb(228, 228, 58);
-      font-size: 1.1rem;
+      color: red;
+      font-size: 1.4rem;
       transition-duration: 0.500s;
     }
     @media only screen and (max-width: 400px) {
@@ -58,32 +67,51 @@
     }
     .container {
       display: flex;
-      justify-content: right;
+      justify-content: space-between;
       margin: 8rem 12rem;
     }
     .box {
-      height: 40vh;
-      width: 60vh;
+      height: 45vh;
+      width: 70vh;
       background-color: rgb(25, 25, 87);
       color: white;
     }
     .box h2 {
       padding: 1rem;
-      margin: 0.5rem 7rem;
+      margin: 0.5rem 7.5rem;
+      color: lightgreen;
     }
     .box p {
       padding: 1rem;
+      font-size: 1.2rem;
     }
     .box p a {
       text-decoration: none;
       color: rgb(228, 228, 58);
     }
+    .box p a:hover {
+      color: rgb(151, 222, 151);
+      transition-duration: 0.500s;
+    }
+    .box2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box2 p a {
+      font-size: 2.5rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="nav-container">
+      <!-- <input type="checkbox" id="checkbox">
+      <label for="checkbox">
+        <i class="fa-regular fa-bars"></i>
+      </label> -->
       <div class="logo">
+        <img src="logo.png">
         Apnawebsite
       </div>
       <div class="list">
@@ -98,10 +126,13 @@
     </nav>
   </header>
   <main class="container">
+    <div class="box box2">
+      <p><a href="about-me.html"><b>About Me!</b></a></p>
+    </div>
     <div class="box">
       <h2>Class Activity</h2>
-      <p><b>Registration</b> <a href="form.html">Click here</a> </p>
-      <p><b>Examination Report</b> <a href="table.html">Click here</a> </p>
+      <p>Registration <a href="form.html">Click here</a> </p>
+      <p>Examination Report <a href="table.html">Click here</a> </p>
     </div>
   </main>
 </body>
