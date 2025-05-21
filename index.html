@@ -4,132 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Page</title>
-  
-  
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-    body {
-      background-color: rgb(8, 8, 55);
-    }
-    .logo {
-      font-size: 2.2rem;
-      color: rgb(8, 8, 55);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo img {
-      height: 80px;
-      width: 80px;
-    }
-    .logo:hover {
-      font-size: 2.3rem;
-      transition-duration: 0.700s;
-    }
-    .nav-container {
-      background-color: white;
-      color: black;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 5.5rem;
-    }
-    .list ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-    }
-    .list ul li {
-      list-style-type: none;
-    }
-    .list ul li a {
-      text-decoration: none;
-      color: black;
-      font-size: 1.3rem;
-    }
-    .list ul li a:hover {
-      color: red;
-      font-size: 1.4rem;
-      transition-duration: 0.500s;
-    }
-    @media only screen and (max-width: 400px) {
-      .logo {
-        display: none;
-      }
-      
-
-      
-
-    }
-    .container {
-      display: flex;
-      justify-content: space-between;
-      margin: 8rem 12rem;
-    }
-    .box {
-      height: 45vh;
-      width: 70vh;
-      background-color: rgb(25, 25, 87);
-      color: white;
-    }
-    .box h2 {
-      padding: 1rem;
-      margin: 0.5rem 7.5rem;
-      color: lightgreen;
-    }
-    .box p {
-      padding: 1rem;
-      font-size: 1.2rem;
-    }
-    .box p a {
-      text-decoration: none;
-      color: rgb(228, 228, 58);
-    }
-    .box p a:hover {
-      color: rgb(151, 222, 151);
-      transition-duration: 0.500s;
-    }
-    .box2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .box2 p a {
-      font-size: 2.5rem;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav class="nav-container">
-      <!-- <input type="checkbox" id="checkbox">
-      <label for="checkbox">
-        <i class="fa-regular fa-bars"></i>
-      </label> -->
-      <div class="logo">
+    <nav class="nav">
+      <!-- <div class="logo">
         <img src="logo.png">
         Apnawebsite
-      </div>
-      <div class="list">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-me.html">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="https://github.com/farhanrashid123">Service</a></li>
-          <li><a href="farhan-rashid0672">Contact</a></li>
-        </ul>
-      </div>
+      </div> -->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label class="logo">
+        <img src="logo.png">
+        Apnawebsite
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="about-me.html">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
   <main class="container">
-    <div class="box box2">
+    <div class="box">
       <p><a href="about-me.html"><b>About Me!</b></a></p>
     </div>
-    <div class="box">
+    <div class="box box2">
       <h2>Class Activity</h2>
       <p>Registration <a href="form.html">Click here</a> </p>
       <p>Examination Report <a href="table.html">Click here</a> </p>
