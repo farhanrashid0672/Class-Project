@@ -195,7 +195,7 @@ label img {
 }
 } */
 
-@media (min-width: 254px) and (max-width: 340px) {
+@media (min-width: 254px) and (max-width: 400px) {
   img {
     display: none;
   }
