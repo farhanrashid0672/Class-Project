@@ -22,20 +22,24 @@
       align-items: center;
     }
     .logo img {
-      height: 80px;
-      width: 80px;
+      height: 3rem;
+      width: 3rem;
+      padding-right: .5rem;
+      
     }
     .logo:hover {
       font-size: 2.3rem;
       transition-duration: 0.700s;
     }
     .nav-container {
-      background-color: white;
+      
       color: black;
       display: flex;
       justify-content: space-around;
       align-items: center;
       height: 5.5rem;
+      width: 100%;
+      background-color: #ceddbb;
     }
     .list ul {
       display: flex;
@@ -52,27 +56,37 @@
       font-size: 1.3rem;
     }
     .list ul li a:hover {
-      color: red;
+      color: #0808f1;
       font-size: 1.4rem;
       transition-duration: 0.500s;
     }
         .container {
             display: flex;
             justify-content: space-around;
-            margin-top: 70px;
-            margin-bottom: 70px;
-            background-color: rgb(15, 15, 80);
+            /* margin-top: 4.2rem;
+            margin-bottom: 4.2rem; */
+            
+        }
+        .main {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          /* margin-top: 2.5rem; */
+          padding: 2rem;
+          background-color: #ffe0e9;
+          width: 100%;
         }
         .photo {
             height: 300px;
             width: 300px;
             border-radius: 50%;
+            
         }
         .name {
             font-size: 2rem;
             color: rgb(18, 18, 140);
             font-weight: bold;
-            margin: 2rem;
+            
         }
         .education {
             height: 200px;
@@ -90,7 +104,8 @@
             height: 50px;
             width: 100%;
             align-items: center;
-        }
+          }
+        
         
     </style>
     
@@ -103,8 +118,8 @@
         <i class="fa-regular fa-bars"></i>
       </label> -->
       <div class="logo">
-        <img src="logo.png">
-        Apnawebsite
+        <img src="flogo.png">
+        Portfolio
       </div>
       <div class="list">
         <ul>
@@ -117,14 +132,15 @@
       </div>
     </nav>
   </header>
-    <main class="container">
+  <main>
+      <div class="main">
         <div class="name">
             Hello, <br> My name is Farhan Rashid
         </div>
         <div class="photo">
             <img src="image.jpg" class="photo">
         </div>
-        </main>
+      </div>
         <hr>
         <div class="education">
             <h3>Education</h3>
@@ -145,6 +161,8 @@
         <div class="project">
 
         </div>
+
+  </main>
         <hr>
         <footer>
             <div>
